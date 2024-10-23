@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/uiux.css">
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="project-container">
+        <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+        <div class="project-header">
+            <h1 class="project-title">McDonald's - ui/ux</h1>
+        </div>
+        
+        <div class="project-info">
+            <p class="project-details">McDonald's app ----- March 16, 2024</p>
+        </div>
+        
+        <div class="project-image-container">
+            <img src="image/ui_ux.jpg" alt="McDonald's App" class="project-image">
+        </div>
+        
+        <div class="role-overview-container">
+            <div class="role-section">
+                <h2 class="role-title">My Role</h2>
+                <p class="role-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                
+                <div class="additional-role-section">
+                    <h2 class="role-title">My Role</h2>
+                    <p class="role-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+            
+            <div class="overview-section">
+                <h2 class="overview-title">Overview</h2>
+                <p class="overview-description">This project focused on enhancing user experience and interaction design to create a more engaging and intuitive application for McDonald's customers.</p>
+            </div>
+        </div>
+    
+        <!-- User Research Section -->
+        <div class="user-research-container">
+            <h2 class="user-research-title">User Research</h2>
+            
+            <h3 class="key-sentences-title">Key Sentences in the Project</h3>
+            
+            <div class="user-research-image-container">
+                <img src="image/ui_ux.jpg" alt="User Research" class="user-research-image">
+            </div>
+            
+            <div class="problems-solution-container">
+                <div class="problems-section">
+                    <h4>Problems & Solution</h4>
+                    <p>This section outlines the problems identified during the user research and the solutions implemented to address them.
+                        This section outlines the problems identified during the user research and the solutions implemented to address them.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="user-research-image-container">
+                <img src="image/UI_Slide1.png" alt="User Research 2" class="user-research-image">
+            </div>
+    
+            <div class="problems-solution-container">
+                <div class="problems-section">
+                    <h4>Problems & Solution</h4>
+                    <p>This section outlines the problems identified during the user research and the solutions implemented to address them.</p>
+                </div>
+            </div>
+            
+            <div class="user-research-image-container">
+                <img src="image/UI_Slide2.png" alt="User Research 3" class="user-research-image">
+            </div>
+    
+            <div class="problems-solution-container">
+                <div class="problems-section">
+                    <h4>Problems & Solution</h4>
+                    <p>This section outlines the problems identified during the user research and the solutions implemented to address them.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        // Initialize Lenis
+    const lenis = new Lenis();
+    
+    // Listen for the scroll event and log the event data
+    lenis.on('scroll', (e) => {
+      console.log(e);
+    });
+    
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    
+    requestAnimationFrame(raf);
+    
+    </script>
+    
+</body>
+</html>
